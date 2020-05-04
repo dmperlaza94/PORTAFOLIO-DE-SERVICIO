@@ -1,0 +1,118 @@
+#page{
+    height: 1000px;
+    display: grid;
+    grid-template-areas: "header header"
+    "cuerpo cuerpo"
+    "pie pie"
+    ;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+header{
+    grid-area: header;
+}
+main{
+    grid-area: cuerpo;}   
+    
+.contenedor_section{
+    margin: 100px;
+    border-radius: 25px;
+    
+}
+.container-padre{
+    display: flex;
+
+ 
+}
+.container-img{
+    width: 50%;
+
+}
+.imagen-cuerpo{
+    margin-left: 50px;
+    width: 500px;
+    height: auto;
+    padding: 70px 0px 70px 20px;
+    border-radius: 50%;
+
+    
+}
+.container-info{
+    width: 50%;
+    text-align: justify;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif ;
+    font-weight: 400;
+    padding: 100px 70px 100px 150px;
+}
+.titulo{
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+}
+.titulo-pp{
+    text-align: center;
+}
+.info{
+    color: black;
+}
+.parrafo{
+    margin-top: 20px;
+    text-align: center;
+}
+.formacion-academica{
+    display: flex;
+    margin: 0px 70px 50px 70px;
+    justify-content: center;
+    transition: 0.5s linear;
+   
+}
+.cajas:hover{transform: scale(1.2);
+}
+
+.cajas{
+   text-align: justify;
+    margin: 70px;
+    padding: 20px;
+    border-radius: 25px;
+    box-shadow:  0px 0px 10px hsl(208, 11%, 55%);
+    width: 250px;
+}
+.iconos{
+ padding:20px 20px 20px 70px;
+}
+.mis_proyectos{
+    display: flex;
+
+}
+.parrafo{
+    text-align: center;
+    transition: 0.5s linear;
+    margin-bottom: 50px;
+}
+a{
+    margin: auto;
+}
+.img_proyectos{
+    width: 250px;   
+    margin: auto;
+    border-radius: 15px;
+    border: 5px solid hsl(214, 67%, 65%) ;
+    height: 400px;
+}
+.img_proyectos:hover{transform: scale(2.0);
+    box-shadow: 0px 0px 20px purple;
+}
+
+footer{
+    margin-top: 150px;
+    background-color: hsl(208, 11%, 55%);
+    grid-area: pie;  
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    color: white ;
+}
+    .redes-sociales{
+    color: white;
+    }
