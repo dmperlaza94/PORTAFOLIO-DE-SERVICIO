@@ -1,118 +1,195 @@
-#page{
-    height: 1000px;
-    display: grid;
-    grid-template-areas: "header header"
+#page {
+  height: 1000px;
+  display: grid;
+  grid-template-areas:
+    "header header"
     "cuerpo cuerpo"
-    "pie pie"
-    ;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
+    "pie pie";
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
 }
-header{
-    grid-area: header;
+header {
+  grid-area: header;
+  height: auto;
 }
-main{
-    grid-area: cuerpo;}   
-    
-.contenedor_section{
-    margin: 100px;
-    border-radius: 25px;
-    
-}
-.container-padre{
+
+#navbar {
     display: flex;
-
- 
-}
-.container-img{
-    width: 50%;
-
-}
-.imagen-cuerpo{
-    margin-left: 50px;
-    width: 500px;
-    height: auto;
-    padding: 70px 0px 70px 20px;
-    border-radius: 50%;
-
-    
-}
-.container-info{
-    width: 50%;
-    text-align: justify;
-    font-size: 18px;
-    font-family: 'Open Sans', sans-serif ;
-    font-weight: 400;
-    padding: 100px 70px 100px 150px;
-}
-.titulo{
-    font-size: 25px;
-    font-weight: 600;
-    text-align: center;
-}
-.titulo-pp{
-    text-align: center;
-}
-.info{
-    color: black;
-}
-.parrafo{
-    margin-top: 20px;
-    text-align: center;
-}
-.formacion-academica{
-    display: flex;
-    margin: 0px 70px 50px 70px;
-    justify-content: center;
-    transition: 0.5s linear;
-   
-}
-.cajas:hover{transform: scale(1.2);
-}
-
-.cajas{
-   text-align: justify;
-    margin: 70px;
+    width: 100%;
+    height: 100px;
+    box-shadow: 0px 0px 10px hsl(208, 11%, 55%);
     padding: 20px;
+    
+  }
+  .nav {padding: 15px;
     border-radius: 25px;
-    box-shadow:  0px 0px 10px hsl(208, 11%, 55%);
-    width: 250px;
-}
-.iconos{
- padding:20px 20px 20px 70px;
-}
-.mis_proyectos{
+    box-shadow: 0px 0px 10px hsl(208, 11%, 55%);
     display: flex;
-
+  }
+  .caja-habilidades{
+    margin-left: 100px;
 }
-.parrafo{
-    text-align: center;
-    transition: 0.5s linear;
-    margin-bottom: 50px;
+.habilidad{
+    padding-top: 100px;
+     width: 20%;
+     height: auto;
+     margin: 25px;
 }
-a{
-    margin: auto;
-}
-.img_proyectos{
-    width: 250px;   
-    margin: auto;
-    border-radius: 15px;
-    border: 5px solid hsl(214, 67%, 65%) ;
-    height: 400px;
-}
-.img_proyectos:hover{transform: scale(2.0);
-    box-shadow: 0px 0px 20px purple;
+main {
+  grid-area: cuerpo;
 }
 
-footer{
-    margin-top: 150px;
-    background-color: hsl(208, 11%, 55%);
-    grid-area: pie;  
-    font-family: 'Open Sans', sans-serif;
-    font-size: 15px;
-    text-align: center;
-    color: white ;
+#contenedor_section {
+  margin: 100px;
+  border-radius: 25px;
+  box-shadow: 0px 0px 10px hsl(208, 11%, 55%);
 }
-    .redes-sociales{
+.container-padre {
+  display: flex;
+}
+.container-img {
+  width: 50%;
+}
+.imagen-cuerpo {
+  margin-left: 50px;
+  width: 500px;
+  padding: 70px 0px 70px 20px;
+  border-radius: 30%;
+}
+.container-info {
+  width: 50%;
+  text-align: justify;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  padding: 300px 70px 50px 150px;
+}
+.titulo {
+  font-size: 35px;
+  font-weight: 600;
+  text-align: center;
+}
+.titulo-pp {
+  text-align: center;
+}
+.info {
+  color: black;
+  padding-top: 50px;
+}
+.parrafo {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.formacion-academica {
+  display: flex;
+  margin: 0px 70px 50px 70px;
+  justify-content: center;
+  transition: 0.5s linear;
+}
+.cajas:hover {
+  transform: scale(1.2);
+}
+
+.cajas {
+  text-align: justify;
+  margin: 70px;
+  padding: 20px;
+  border-radius: 25px;
+  box-shadow: 0px 0px 10px hsl(208, 11%, 55%);
+  width: 250px;
+}
+.iconos {
+  padding: 20px 30px 20px 70px;
+}
+#mis_proyectos {
+  display: flex;
+}
+.parrafo {
+  text-align: center;
+  transition: 0.5s linear;
+  margin-bottom: 50px;
+}
+a {
+  margin: auto;
+}
+.img_proyectos {
+  width: 250px;
+  margin: auto;
+  border-radius: 15px;
+  border: 5px solid hsl(214, 67%, 65%);
+  height: 400px;
+  transition-duration: 2s;
+}
+.img_proyectos:hover {
+  transform: translateY(-100px ) scale(2.0);
+  box-shadow: 0px 0px 20px purple;
+}
+
+footer {
+    padding-top: 20px;
+  height: 250px;
+  margin-top: 150px;
+  background-color: hsl(208, 11%, 55%);
+  grid-area: pie;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  text-align: center;
+  color: white;
+}
+  .icon-redsocial{
+    font-size: 25px;
     color: white;
+  }
+@media (max-width: 1000px) and (min-width: 350px){
+        .caja-habilidades{
+        width: 100%;
+        background-color: black;
+        margin: 0;
     }
+    .habilidad{
+        padding-top: 100px;
+         width: 20%;
+         height: auto;
+         margin: 10px 15px 10px 15px;
+    }
+    #contenedor_section{
+        display: flex;
+      }
+      .container-padre {
+       flex-wrap: wrap;
+      }
+      .container-img {
+        width: 80%;
+      }
+      .container-info {
+        width: 100%;
+        text-align: justify;
+        font-size: 18px;
+        font-family: "Open Sans", sans-serif;
+        padding: 100px 70px 100px 150px;
+      }
+      .formacion-academica {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .cajas {
+        text-align: justify;
+        padding-left: 130px;
+        width: 80%;
+    }
+
+      #mis_proyectos {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 25px;
+      }
+      .img_proyectos:hover {
+        transform: translateY(-100px ) scale(2.0);
+        box-shadow: 0px 0px 20px purple;
+      }
+        .redes-sociales {
+            border-radius: 50%;
+            color: black;
+            
+          }
+}
